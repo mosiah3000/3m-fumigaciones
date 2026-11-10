@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #102D43;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Modern CSS :user-invalid and :user-valid styling after user interaction */
+.form-field-interactive:user-invalid {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+}
+
+.form-field-interactive:user-valid {
+  border-color: #059669;
+}
+
+dialog::backdrop {
+  background-color: rgba(6, 59, 91, 0.85);
+  backdrop-filter: blur(4px);
+}
